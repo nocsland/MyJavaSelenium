@@ -1,6 +1,7 @@
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.opera.OperaDriver;
 
@@ -25,7 +26,12 @@ public class LiteCart {
 
     public void LiteCart() {
 
-        driver.get("http://localhost/litecart");
+        driver.get("http://localhost/litecart/admin");
+        driver.findElement(By.xpath("//*[@id=\"box-login\"]/form/div[1]/div[1]/div/input")).sendKeys("admin");
+        driver.findElement(By.xpath("//*[@id=\"box-login\"]/form/div[1]/div[2]/div/input")).sendKeys("admin");
+        driver.findElement(By.xpath("//*[@id=\"box-login\"]/form/div[2]/button")).click();
+        driver.findElement(By.xpath("//*[@id=\"top-bar\"]/li[10]/a")).click();
+
 
 
     }
