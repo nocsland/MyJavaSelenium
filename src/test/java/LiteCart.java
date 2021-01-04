@@ -1,6 +1,3 @@
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
 import org.junit.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
@@ -8,9 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.opera.OperaDriver;
 import java.util.concurrent.TimeUnit;
 import static org.junit.Assert.assertTrue;
-import java.util.concurrent.TimeUnit;
-import org.junit.*;
-import static org.junit.Assert.*;
 
 
 public class LiteCart {
