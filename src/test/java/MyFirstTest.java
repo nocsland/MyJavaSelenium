@@ -21,7 +21,7 @@ public class MyFirstTest {
     public void start() throws Exception {
         driver = new OperaDriver();
         wait = new WebDriverWait(driver,2);
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 
     }
 

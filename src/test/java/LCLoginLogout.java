@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 import static org.junit.Assert.assertTrue;
 
 
-public class LiteCart {
+public class LCLoginLogout {
     private WebDriver driver;
 
 
@@ -21,7 +21,7 @@ public class LiteCart {
 
     @Test
 
-    public void LiteCart() {
+    public void LoginLogout() {
 
         driver.get("http://localhost/litecart/admin");
         driver.findElement(By.xpath("//*[@id=\"box-login\"]/form/div[1]/div[1]/div/input")).sendKeys("admin");
