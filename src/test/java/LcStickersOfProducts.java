@@ -3,12 +3,15 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.util.concurrent.TimeUnit;
+
 import static org.junit.Assert.assertTrue;
-import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
+
+
 
 
 
@@ -28,7 +31,7 @@ public class LcStickersOfProducts {
 
     @Test
 
-    public void MyFirstTest() {
+    public void StickersOfProducts() {
 
         driver.get("http://localhost/litecart/");
 //Campaign Products
@@ -45,7 +48,6 @@ public class LcStickersOfProducts {
         assertTrue(isElementPresent(By.xpath("//*[@id=\"box-latest-products\"]/div/article[3]/a/div[1]/div")));
         assertTrue(isElementPresent(By.xpath("//*[@id=\"box-latest-products\"]/div/article[4]/a/div[1]/div")));
         assertTrue(isElementPresent(By.xpath("//*[@id=\"box-latest-products\"]/div/article[5]/a/div[1]/div")));
-
 
     }
 
