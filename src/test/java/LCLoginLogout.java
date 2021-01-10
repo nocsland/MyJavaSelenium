@@ -4,6 +4,8 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.opera.OperaDriver;
 
 import java.util.concurrent.TimeUnit;
@@ -26,7 +28,6 @@ public class LCLoginLogout {
     @Test
 
     public void LoginLogout() {
-
         driver.get("http://localhost/litecart/admin");
         driver.findElement(By.xpath("//*[@id=\"box-login\"]/form/div[1]/div[1]/div/input")).sendKeys("admin");
         driver.findElement(By.xpath("//*[@id=\"box-login\"]/form/div[1]/div[2]/div/input")).sendKeys("admin");
