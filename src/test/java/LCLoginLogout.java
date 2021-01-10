@@ -34,6 +34,7 @@ public class LCLoginLogout {
         driver.findElement(By.xpath("//*[@id=\"box-login\"]/form/div[2]/button")).click();
         assertTrue(isElementPresent(By.xpath("//*[@id=\"logotype\"]/a/img")));
         driver.findElement(By.xpath("//*[@id=\"top-bar\"]/li[10]/a")).click();
+        assertTrue(isElementPresent(By.xpath("//*[@id=\"box-login\"]/div/a/img")));
 
 
     }
